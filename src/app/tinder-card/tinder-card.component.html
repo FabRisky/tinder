@@ -1,0 +1,26 @@
+<mat-card *ngIf="users" [@cardAnimator]="animationState"class="tinder-card" (@cardAnimator.done)="resetAnimationState($event)" >
+    <mat-card-header>
+      <div mat-card-avatar class="tinder-card__image"></div>
+    </mat-card-header>
+    <img mat-card-image src="{{users.picture.large}}" width="128" height="128" alt="Tinder Photo">
+    <mat-card-title>{{users.name.first + ' ' + users.name.last + ', ' + users.dob.age}}</mat-card-title>
+      <mat-card-subtitle>Gender: {{users.gender}}</mat-card-subtitle>
+    <mat-card-content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque est vel dui bibendum, eu vestibulum est vulputate. Vestibulum congue aliquam posuere. Aliquam imperdiet orci leo, sit amet tristique ante mollis eu. Nunc convallis mollis mi. Proin tincidunt sem et neque maximus, a bibendum orci aliquet. 
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>
+  <div class="tinder_b-buttons">
+  <button mat-button (click)='startAnimation("swipeLeft")'><mat-icon class="tinder-card-icon decline-icon" svgIcon="decline"></mat-icon></button>
+  <button mat-button (click)='startAnimation("swipeRight")'><mat-icon class="tinder-card-icon heart-icon" svgIcon="heart"></mat-icon></button>
+</div>
+
+
+
+
+
+
+

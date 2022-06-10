@@ -1,0 +1,35 @@
+.tbg {
+  overflow-x: hidden;
+}
+
+.tbg {
+  height: auto;
+  width: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 1px solid #c0c0c0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tinder-main__block {
+  padding: 10px;
+  text-align: center;
+}
+
+.theader {
+  height: 65px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.tlogo {
+  width: 100px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.tlogo img {
+  width: 100px;
+}

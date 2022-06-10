@@ -1,0 +1,50 @@
+.tinder-card {
+    max-width: 400px;
+    margin: 30px auto;
+  }
+
+  .mat-card-image {
+    width: auto;
+    margin:0 auto 20px auto;
+    border-radius: 50%;
+  }
+
+  mat-card-content {
+      margin-top:35px auto;
+      display: inline-block;
+  }
+
+  .tinder-card-icon{
+    width: 100px;
+    height: 100px;
+  }
+
+  .decline-icon{
+    color:red;
+  }
+
+
+  .tinder_b-buttons {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    
+  }
+
+  :host ::ng-deep app-tinder-match .mat-dialog-container{
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    background: lightcyan;
+    color: #039be5;
+  }
+
+  ::ng-deep .custom-match-dialog {
+    mat-dialog-container {
+      border-radius: 10px;
+      // background: lightcyan;
+      // color: #039be5;
+      text-align: center;
+    }
+  }
