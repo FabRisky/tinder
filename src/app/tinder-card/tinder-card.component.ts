@@ -23,8 +23,7 @@ export class TinderCardComponent implements OnInit {
  animationState: string | undefined;
  index:number = 0;
 
-  constructor(private userService:UserService, public dialog: MatDialog) { 
-  }
+  constructor(private userService:UserService, public dialog: MatDialog) {}
 
   getUserInfo() {
     this.userService.getUserData().subscribe((res:any) => {
@@ -37,12 +36,9 @@ export class TinderCardComponent implements OnInit {
   }
 
   startAnimation(state:any) {
-    // let test = this.randomIntFromInterval(24)
-    // console.log(test)
     if (!this.animationState) {
       this.animationState = state;
       if (this.animationState !== 'swipeLeft' && (this.index === 4 || this.index === 10 || this.index === 16)) {
-        // if (this.animationState !== 'swipeLeft' && this.randomIntFromInterval(24) === this.index) {
         const dialogRef = this.dialog.open(TinderMatchComponent, {
           width: '20%',
           panelClass: 'custom-match-dialog'
@@ -60,14 +56,8 @@ export class TinderCardComponent implements OnInit {
     this.index++;
   }
 
-  //for tests
-  randomIntFromInterval(range:number) { 
-    return Math.floor( Math.random() * range / 2 ) * 2;
-  }
+
   
 
-  ngOnDestroy() {
-    // this.userService.unsubscribe();
-  }
 
 }
